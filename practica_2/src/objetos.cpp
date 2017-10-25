@@ -258,8 +258,8 @@ void _revolucion::parametros(bool tapas, int num) {
       caras.push_back(cara_aux);
 
       cara_aux._0 = i + 1 + j*pts_perfil;
-      cara_aux._0 = i + j*pts_perfil;
-      cara_aux._1 = i + ((j+1)%n)*pts_perfil;
+      cara_aux._1 = i + j*pts_perfil;
+      cara_aux._2 = i + ((j+1)%n)*pts_perfil;
       caras.push_back(cara_aux);
     }
   }
